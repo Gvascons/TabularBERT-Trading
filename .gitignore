@@ -1,0 +1,103 @@
+# TabularBERT Trading System .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# PyCharm
+.idea/
+
+# VSCode
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data and models
+price_cache/
+pretrained_models/
+*.zip
+*.pt
+*.pth
+*.pkl
+*.h5
+*.hdf5
+
+# Logs and outputs
+ppo_stock_tensorboard/
+logs/
+*.log
+runs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*_backup.py
+*_old.py
+*_original.py
+*_before_*.py
+*_with_*.py
+*.bak
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# Configuration overrides (for local testing)
+config_local.py
+config_override.py
+
+# Results and reports
+results/
+reports/
+*.csv
+*.xlsx
+
+# Plots and figures (if saving locally)
+plots/
+figures/
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+
+# Environment variables
+.env
+.env.local
+
+# Documentation build
+docs/_build/
+docs/_static/
+docs/_templates/ 
