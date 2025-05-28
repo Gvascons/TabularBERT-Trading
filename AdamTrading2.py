@@ -1341,7 +1341,13 @@ def evaluate_agent(model, env, cfg):
     
     plt.tight_layout()
     plt.subplots_adjust(hspace=0.25)
-    plt.show()
+    
+    # Save figure instead of showing it
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    figure_path = f"./evaluation_results_{cfg['ticker']}_{timestamp}.png"
+    plt.savefig(figure_path, dpi=300, bbox_inches='tight')
+    plt.close()  # Close the figure to free memory
+    print(f"\n📊 Evaluation plot saved to: {figure_path}")
     
     # Risk metrics
     agent_returns = np.diff(net_vals) / np.array(net_vals[:-1])
